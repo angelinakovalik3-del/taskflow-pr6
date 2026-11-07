@@ -1,0 +1,236 @@
+
+/* TaskFlow: основні стилі карток та сторінок */
+
+.tf3-page {
+  background: #f7f8fc;
+  color: #17253a;
+}
+
+.tf3-container {
+  width: 100%;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 24px 20px 90px;
+  box-sizing: border-box;
+}
+
+.tf3-hero {
+  padding: 30px;
+  background: #13243a;
+  border-radius: 18px;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+
+.tf3-eyebrow {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #5baed9;
+  margin-bottom: 12px;
+}
+
+.tf3-hero h1 {
+  font-size: 30px;
+  line-height: 1.2;
+  margin: 0 0 14px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.tf3-hero p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #d4e3f3;
+  margin: 0;
+}
+
+.tf3-stat-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.tf3-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 22px;
+  border-radius: 15px;
+  border: 1px solid #dce5ef;
+  background: #ffffff;
+  box-shadow: 0 3px 12px rgba(20, 40, 65, 0.05);
+}
+
+.tf3-stat-label {
+  font-size: 14px;
+  color: #60728a;
+  font-weight: 600;
+}
+
+.tf3-stat strong {
+  font-size: 32px;
+  line-height: 1;
+  color: #168fbd;
+}
+
+.tf3-section {
+  margin-top: 28px;
+}
+
+.tf3-section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.tf3-section-heading h2 {
+  margin: 0;
+  color: #17253a;
+  font-size: 24px;
+}
+
+.tf3-counter {
+  padding: 10px 14px;
+  background: #eaf2fb;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #37546f;
+}
+
+.tf3-task-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.tf3-task-card {
+  margin: 0 !important;
+  border-radius: 16px !important;
+  background: #ffffff !important;
+  box-shadow: 0 4px 16px rgba(20, 40, 65, 0.08) !important;
+  overflow: hidden;
+}
+
+.tf3-task-card .card-content {
+  padding: 22px;
+}
+
+.tf3-card-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.tf3-card-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #17253a;
+  margin: 0;
+}
+
+.tf3-card-description {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #56677e;
+  margin: 12px 0;
+}
+
+.tf3-card-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  font-size: 13px;
+  color: #50637a;
+  margin-bottom: 18px;
+}
+
+.tf3-meta-item {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tf3-meta-label {
+  font-weight: 600;
+}
+
+.tf3-card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.tf3-action {
+  flex: 1 1 120px;
+  min-height: 38px;
+  padding: 8px 12px;
+  border: 1px solid #cbd8e7;
+  border-radius: 9px;
+  background: #f1f5fa;
+  color: #29435f;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.tf3-action--primary {
+  background: #168fbd;
+  border-color: #168fbd;
+  color: #ffffff;
+}
+
+.tf3-action:hover {
+  filter: brightness(0.95);
+}
+
+.tf3-action.tf5-danger {
+  border-color: #d56976;
+  background: #fff0f1;
+  color: #af3648;
+}
+
+.tf3-empty {
+  padding: 24px;
+  border-radius: 12px;
+  background: #ffffff;
+  color: #52647a;
+  text-align: center;
+}
+
+@media (max-width: 680px) {
+  .tf3-container {
+    padding: 16px 12px 90px;
+  }
+
+  .tf3-hero {
+    padding: 22px 18px;
+  }
+
+  .tf3-hero h1 {
+    font-size: 24px;
+  }
+
+  .tf3-stat-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tf3-task-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tf3-section-heading h2 {
+    font-size: 21px;
+  }
+}
